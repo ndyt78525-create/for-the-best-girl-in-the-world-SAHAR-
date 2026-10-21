@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170e27">
+<title>برای سحر، قشنگ‌ترین دختر دنیا 💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --pink: #ff85b9;
+  --purple: #bd9bff;
+  --bg: #130c20;
+  --card: rgba(255,255,255,.065);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff2fa;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse at 15% 15%, #69305d66, transparent 40%),
+    radial-gradient(ellipse at 90% 45%, #52388755, transparent 38%),
+    radial-gradient(ellipse at 40% 100%, #75274744, transparent 45%),
+    #130c20;
+}
+
+button, input { font-family: inherit; }
+
+button { cursor: pointer; }
+
+a { color: inherit; text-decoration: none; }
+
+#stars, #hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: .15; transform: scale(.7); }
+  to { opacity: .95; transform: scale(1.7); }
+}
+
+.heart {
+  position: absolute;
+  bottom: -40px;
+  animation: floatUp linear forwards;
+  opacity: .65;
+}
+
+@keyframes floatUp {
+  to { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 7%;
+  border-bottom: 1px solid #ffffff12;
+  background: #130c2066;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  color: var(--pink);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.nav-note {
+  font-size: 12px;
+  color: #d7c2e8;
+}
+
+.hero {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 65px 22px 75px;
+}
+
+.eyebrow {
+  color: #ffb3d4;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border: 1px solid #ff9cc833;
+  padding: 9px 17px;
+  border-radius: 50px;
+  background: #ff8bb10c;
+}
+
+h1 {
+  font-size: clamp(36px, 8vw, 70px);
+  line-height: 1.55;
+  margin: 23px 0 12px;
+  font-weight: 800;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #ffafd2, #e1baff, #ff8bbd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  max-width: 520px;
+  color: #d8c9e2;
+  line-height: 2.2;
+  font-size: 15px;
+}
+
+.main-heart {
+  font-size: 66px;
+  margin: 15px 0;
+  filter: drop-shadow(0 0 22px #ff5d9d77);
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  15% { transform: scale(1.12); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+}
+
+.btn {
+  border: 0;
+  border-radius: 50px;
+  padding: 14px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .25s;
+  display: inline-block;
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+.btn-primary {
+  color: #40152d;
+  background: linear-gradient(110deg, #ffacd1, #d7b6ff);
+  box-shadow: 0 8px 35px #ef75b522;
+}
+
+.btn-secondary {
+  color: #ffe6f2;
+  border: 1px solid #ffb2d344;
+  background: #ffffff09;
+}
+
+section {
+  width: min(900px, 90%);
+  margin: 0 auto;
+  padding: 62px 0;
+}
+
+.section-title {
+  font-size: clamp(25px, 5vw, 37px);
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.section-desc {
+  color: #cbb9d8;
+  font-size: 14px;
+  line-height: 2.1;
+  text-align: center;
+  margin: 0 auto 32px;
+  max-width: 600px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #ffffff12;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 15px 50px #00000015;
+  backdrop-filter: blur(12px);
+}
+
+.photo-frame {
+  width: min(340px, 100%);
+  aspect-ratio: 4 / 5;
+  margin: 0 auto 20px;
+  border-radius: 25px;
+  border: 1px solid #ffafd277;
+  padding: 8px;
+  background: linear-gradient(135deg, #ff9cc866, #b99aff55);
+  box-shadow: 0 0 45px #ff85b918;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 19px;
+  display: block;
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+  background: linear-gradient(150deg, #40203d, #292044);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f9d8ee;
+  gap: 13px;
+  padding: 20px;
+}
+
+.photo-placeholder span { font-size: 65px; }
+.photo-placeholder small { line-height: 2; color: #d8bedb; }
+
+.photo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type=file] { display: none; }
+
+.caption {
+  text-align: center;
+  color: #f9b6d5;
+  font-size: 14px;
+  margin: 20px 0 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.reason {
+  padding: 22px 18px;
+  min-height: 165px;
+  border-radius: 21px;
+  background: #ffffff07;
+  border: 1px solid #ffffff12;
+  transition: .3s;
+}
+
+.reason:hover {
+  transform: translateY(-4px);
+  background: #ff9cc80e;
+  border-color: #ff9cc833;
+}
+
+.reason .emoji { font-size: 29px; }
+
+.reason h3 {
+  color: #ffb7d8;
+  font-size: 16px;
+  margin: 12px 0 7px;
+}
+
+.reason p {
+  color: #d4c4de;
+  font-size: 13px;
+  line-height: 2;
+  margin: 0;
+}
+
+.letter {
+  position: relative;
+  line-height: 2.5;
+  font-size: 15px;
+  color: #f0dfef;
+  white-space: pre-line;
+}
+
+.letter strong { color: #ffb2d5; }
+
+.signature {
+  text-align: left;
+  color: #ffafd2;
+  font-size: 17px;
+  margin-top: 28px;
+  font-weight: 700;
+}
+
+.promise {
+  text-align: center;
+  border-color: #ff9fc933;
+  background: linear-gradient(145deg, #ff90c20b, #a58bff0d);
+}
+
+.promise .big { font-size: 40px; }
+
+.promise p {
+  line-height: 2.4;
+  color: #ead8ed;
+  font-size: 15px;
+}
+
+.wish {
+  text-align: center;
+  line-height: 2.4;
+  color: #ead8ed;
+  font-size: 15px;
+}
+
+.wish .moon { font-size: 43px; }
+
+#surprise {
+  display: none;
+  text-align: center;
+  color: #ffc3df;
+  line-height: 2.5;
+  margin-top: 20px;
+  animation: appear .7s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  padding: 40px 20px 50px;
+  text-align: center;
+  color: #b9a6c8;
+  font-size: 12px;
+  line-height: 2.4;
+  border-top: 1px solid #ffffff10;
+}
+
+footer span { color: #ff8fbd; }
+
+@media (max-width: 560px) {
+  nav { padding: 16px 5%; }
+  .grid { grid-template-columns: 1fr; }
+  .reason { min-height: unset; }
+  section { padding: 45px 0; }
+  .hero { min-height: 80vh; }
+  .card { padding: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div id="hearts"></div>
+
+<nav>
+  <div class="logo">♡ سحرِ من</div>
+  <div class="nav-note">یه گوشه‌ی امن برای قلبت 🌷</div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow">برای قشنگ‌ترین دختر دنیای من</div>
+
+  <div class="main-heart">💗</div>
+
+  <h1>
+    سحرِ من،<br>
+    <span class="gradient">تو بیشتر از چیزی که فکر می‌کنی می‌ارزی.</span>
+  </h1>
+
+  <p class="subtitle">
+    این صفحه رو ساختم برای روزایی که دلت می‌گیره،
+    برای وقتایی که دنیا خسته‌ات می‌کنه،
+    و برای لحظه‌هایی که شاید یادت بره
+    یه نفر چقدر از ته دل دوستت داره.
+  </p>
+
+  <a href="#photo" class="btn btn-primary">بیا یه چیزی بهت بگم ♡</a>
+</header>
+
+<section id="photo">
+  <h2 class="section-title">دخترِ قشنگِ من 🌸</h2>
+  <p class="section-desc">
+    اینجا جای عکس کسیه که بودنش برای من یه دنیا معنی داره.
+  </p>
+
+  <div class="photo-frame">
+    <div class="photo-placeholder" id="placeholder">
+      <span>🌷</span>
+      <strong>عکس پرنسس کوچولومون</strong>
+      <small>عکس سحر رو از گالریت انتخاب کن<br>تا اینجا قشنگ‌تر بشه.</small>
+    </div>
+    <img id="saharPhoto" alt="عکس سحر" hidden>
+  </div>
+
+  <div class="photo-actions">
+    <label class="btn btn-primary" for="photoInput">انتخاب عکس سحر 📷</label>
+    <input id="photoInput" type="file" accept="image/*">
+    <button class="btn btn-secondary" id="removePhoto" hidden>حذف عکس</button>
+  </div>
+
+  <p class="caption">
+    لازم نیست شبیه هیچ‌کس باشی؛ من تو رو با خودِ خودت دوست دارم. 💗
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">می‌دونی چرا قشنگی؟ ✨</h2>
+  <p class="section-desc">
+    نه فقط به خاطر چیزی که توی آینه می‌بینی؛
+    به خاطر خودت، قلبت و تمام چیزایی که تو رو سحر کرده.
+  </p>
+
+  <div class="grid">
+    <div class="reason">
+      <div class="emoji">🌷</div>
+      <h3>چون خودتی</h3>
+      <p>لازم نیست خودتو با کسی مقایسه کنی. تو نسخه‌ی تکرارنشدنی خودتی و همین ارزشمنده.</p>
+    </div>
+
+    <div class="reason">
+      <div class="emoji">🫶🏻</div>
+      <h3>چون قلبت مهمه</h3>
+      <p>احساساتت، مهربونیت و چیزایی که توی دلت نگه می‌داری، بخشی از زیبایی توئن.</p>
+    </div>
+
+    <div class="reason">
+      <div class="emoji">🌙</div>
+      <h3>حتی توی روزای سخت</h3>
+      <p>وقتی خسته‌ای، ناراحتی یا حوصله‌ی هیچ‌چیزی رو نداری، باز هم دوست‌داشتنی و ارزشمندی.</p>
+    </div>
+
+    <div class="reason">
+      <div class="emoji">💗</div>
+      <h3>چون برای من عزیزی</h3>
+      <p>لبخندت خوشحالم می‌کنه؛ اما برای دوست‌داشتنی بودن لازم نیست همیشه لبخند بزنی.</p>
+    </div>
+
+    <div class="reason">
+      <div class="emoji">🦋</div>
+      <h3>چون حق آرامش داری</h3>
+      <p>حق داری استراحت کنی، نه بگی، ناراحت باشی و بدون احساس گناه از خودت مراقبت کنی.</p>
+    </div>
+
+    <div class="reason">
+      <div class="emoji">👑</div>
+      <h3>چون ارزش تو کم نمی‌شه</h3>
+      <p>اشتباه دیگران، حرف‌های آزاردهنده یا روزهای بد، از ارزش تو حتی یه ذره هم کم نمی‌کنن.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">یه نامه از ته قلبم 💌</h2>
+  <p class="section-desc">این چند خط رو آروم بخون؛ انگار روبه‌روت نشستم.</p>
+
+  <div class="card letter">
+سحرِ قشنگم، دختر کوچولوی من، عشقِ من… 💗
+
+نمی‌دونم امشب دقیقاً چه چیزایی توی دلت می‌گذره،
+نمی‌دونم چقدر خسته‌ای، چقدر فکر کردی،
+چند بار بغضتو قورت دادی یا چند بار به روی خودت نیاوردی که ناراحتی.
+
+ولی می‌خوام بدونی که لازم نیست همه‌ی این چیزا رو تنهایی تحمل کنی.
+
+من نمی‌خوام بهت بگم ناراحت نباش،
+چون می‌دونم بعضی وقتا آدم نمی‌تونه با یه جمله حالش رو خوب کنه.
+نمی‌خوام مجبور باشی همین الان لبخند بزنی
+یا وانمود کنی همه‌چیز خوبه.
+
+<strong>من می‌خوام حتی وقتی حالت خوب نیست، کنارت باشم.</strong>
+
+اگه دلت گرفته، می‌تونی حرف بزنی.
+اگه حوصله‌ی حرف زدن نداری، می‌تونیم سکوت کنیم.
+اگه خسته‌ای، استراحت کن.
+اگه اشکت میاد، لازم نیست جلوی من خودتو قوی نشون بدی.
+
+تو قرار نیست همیشه قوی باشی تا دوستت داشته باشم.
+
+عشق من، خیلی از وقتا آدم‌ها با حرف‌هاشون،
+با قضاوت‌هاشون یا با رفتاراشون دل همدیگه رو می‌شکنن.
+من نمی‌خوام دردتو کوچیک کنم یا بگم نباید ناراحت بشی.
+حق داری از چیزایی که آزارت دادن ناراحت باشی.
+
+اما لطفاً اجازه نده رفتار آدم‌ها باعث بشه خودتو کم‌ارزش ببینی.
+تو مسئول اشتباه‌های همه نیستی.
+لازم نیست برای اینکه دوست‌داشتنی باشی، همه رو راضی نگه داری.
+
+<strong>سحر جان، من عاشق خودِ توام.</strong>
+
+عاشق خنده‌هات، حرف زدنت،
+شیطنت‌هات، اخم کردنت وقتی چیزی ناراحتت می‌کنه،
+و حتی اون وقتایی که فقط دلت می‌خواد یکی بغلت کنه
+و بهت بگه: «من اینجام، عزیزم.»
+
+کاش می‌تونستم امشب تمام فکرای سنگینتو
+برای چند دقیقه از روی شونه‌هات بردارم،
+بغلت کنم و بذارم بدون نگرانی استراحت کنی.
+
+کاش می‌تونستم بهت نشون بدم وقتی خودتو از چشم خودت نگاه می‌کنی،
+چقدر چیزای قشنگی هست که شاید ازشون غافل می‌شی.
+
+تو لازم نیست کامل باشی.
+لازم نیست همیشه خوشگل‌ترین، قوی‌ترین یا خوشحال‌ترین آدم دنیا باشی.
+برای من، تو با تمام احساساتت، با تمام نقص‌هات و با تمام وجودت عزیزی.
+
+<strong>یه قول بهت می‌دم، پرنسس من:</strong>
+
+من برای بهتر شدن چیزایی که از دستم برمیاد تلاش می‌کنم.
+اگه اشتباهی از من سر بزنه، سعی می‌کنم مسئولیتش رو بپذیرم و جبرانش کنم.
+اگه روزگار سخت بگیره، تا جایی که بتونم کنارت می‌مونم.
+نه اینکه ادعا کنم می‌تونم تمام مشکلات دنیا رو ناپدید کنم،
+بلکه می‌خوام توی سختی‌ها فقط حرف نزنم؛ با رفتارم هم نشون بدم که برام مهمی.
+
+من نمی‌خوام دنیا رو به جای تو بجنگم؛
+می‌خوام وقتی خودت داری می‌جنگی، بدونی تنها نیستی.
+
+و اگه یه روز خسته شدی و خواستی استراحت کنی،
+من دوست دارم دستت رو بگیرم و یادت بندازم
+که حتی وسط سخت‌ترین روزات هم می‌تونی دوباره امید پیدا کنی.
+
+سحرِ من…
+اگه امشب هیچ‌کس بهت نگفته که چقدر عزیزی،
+بذار من بهت بگم:
+
+تو مهمی.
+احساست مهمه.
+آرامشت مهمه.
+آینده‌ات مهمه.
+آرزوهایی که هنوز بهشون نرسیدی مهمن.
+و خودِ تو، خیلی بیشتر از چیزی که شاید امروز حس می‌کنی، ارزشمندی.
+
+من نمی‌تونم قول بدم هیچ‌وقت ناراحت نشی،
+اما می‌تونم قول بدم عشقم رو فقط برای روزای خوب نگه ندارم.
+
+<strong>تا آخر عمر عاشقتم، سحرِ من. 💗</strong>
+
+<div class="signature">با تمام قلبم، برای تو… ♡</div>
+  </div>
+</section>
+
+<section>
+  <div class="card promise">
+    <div class="big">🫂💗</div>
+    <h2 class="section-title">پرنسس کوچولوی من</h2>
+    <p>
+      من مراقب قلبت هستم، عزیزم.<br>
+      نه با کنترل کردنت، نه با تصمیم گرفتن به جات؛<br>
+      با احترام گذاشتن بهت، شنیدنت و حمایت کردنت.<br><br>
+
+      هیچ‌کس حق نداره باهات بدرفتاری کنه و بعد ازت انتظار داشته باشه
+      انگار هیچ اتفاقی نیفتاده.<br>
+      تو حق داری حد و مرز داشته باشی و از خودت محافظت کنی.<br><br>
+
+      <strong style="color:#ffafd2">
+      من می‌خوام یکی از آدمایی باشم که کنار اون احساس امنیت می‌کنی،
+      نه یکی از آدمایی که مجبور باشی ازشون بترسی.
+      </strong>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">آرزوی من برای تو 🌙</h2>
+  <p class="section-desc">یه آرزو که از ته دلم برای قشنگ‌ترین دختر زندگیم دارم.</p>
+
+  <div class="card wish">
+    <div class="moon">🌙✨</div>
+
+    آرزو می‌کنم یه روز از خواب بیدار بشی
+    و ببینی خیلی از چیزایی که امشب ناراحتت کردن،
+    دیگه اون قدرت قبلی رو روی قلبت ندارن.
+
+    <br><br>
+
+    آرزو می‌کنم به چیزایی برسی که برای رسیدن بهشون تلاش کردی،
+    آدمایی دور و برت باشن که قدر قلبت رو بدونن،
+    شب‌ها با خیال راحت بخوابی،
+    از ته دل بخندی و هیچ‌وقت برای دوست داشته شدن
+    مجبور نباشی خودت رو تغییر بدی.
+
+    <br><br>
+
+    آرزو می‌کنم وقتی به خودت نگاه می‌کنی،
+    به جای پیدا کردن ایرادهای خودت،
+    خوبی‌هات رو هم ببینی.
+
+    <br><br>
+
+    و اگه مسیر زندگی گاهی سخت شد،
+    امیدوارم یادت بمونه که یک روز بد،
+    یک اتفاق تلخ یا یک دوره‌ی سخت،
+    تمام داستان زندگی تو نیست.
+
+    <br><br>
+
+    <strong style="color:#ffafd2">
+      من برای آرامش تو، برای لبخندت و برای آرزوهات دعا می‌کنم.
+      دلم می‌خواد روزهای قشنگ زیادی در انتظارت باشن. 💗
+    </strong>
+  </div>
+</section>
+
+<section>
+  <div class="card" style="text-align:center">
+    <div style="font-size:38px">💌</div>
+    <h2 class="section-title">یه حرف آخر، فقط برای تو</h2>
+    <p class="section-desc" style="margin-bottom:22px">
+      سحر جان، اگه دوست داشتی اینو باز کن.
+      هیچ عجله‌ای هم نیست، عشق من.
+    </p>
+
+    <button class="btn btn-primary" id="surpriseBtn">
+      حرف آخرم رو بخون ♡
+    </button>
+
+    <div id="surprise">
+      <p>
+        عزیزترینم…<br><br>
+
+        تو مجبور نیستی امشب همه‌چیز رو حل کنی.
+        لازم نیست همین الان جواب همه‌ی سؤال‌هات رو پیدا کنی.
+        بعضی روزا فقط باید ازشون عبور کنیم،
+        آروم‌آروم، قدم‌به‌قدم.<br><br>
+
+        اگه دلت خواست حرف بزنی، من گوش می‌دم.
+        اگه کمک خواستی، باهات فکر می‌کنم.
+        اگه فقط دلت یه کم محبت خواست،
+        بیا تا جایی که می‌تونم بهت محبت کنم.<br><br>
+
+        <strong>تو برای من فقط لبخندت نیستی؛
+        تو تمامِ خودتی، و من تمامِ تو رو دوست دارم.</strong><br><br>
+
+        یه بوس روی پیشونی دختر قشنگم 😘<br>
+        شبِ دلت آروم، پرنسس من. 💗
+      </p>
+
+      <div style="font-size:35px">💗🌷🫂</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  این صفحه شاید از چند خط کد ساخته شده باشه،<br>
+  اما حرفایی که توش نوشته شده، از ته قلبمه.<br><br>
+  ساخته‌شده با عشق، برای <span>سحرِ من</span> ♡<br>
+  <span>تو لایق عشق، آرامش و روزهای قشنگی.</span>
+</footer>
+
+<script>
+const stars = document.getElementById('stars');
+const hearts = document.getElementById('hearts');
+
+// آسمون پرستاره
+for (let i = 0; i < 85; i++) {
+  const star = document.createElement('i');
+  star.className = 'star';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.top = Math.random() * 100 + '%';
+  star.style.animationDelay = Math.random() * 3 + 's';
+  star.style.animationDuration = (1.5 + Math.random() * 3) + 's';
+  stars.appendChild(star);
+}
+
+// قلب‌های شناور
+function makeHeart() {
+  const heart = document.createElement('span');
+  heart.className = 'heart';
+  heart.textContent = ['♡', '💗', '💕', '✨', '🌸'][
+    Math.floor(Math.random() * 5)
+  ];
+  heart.style.left = Math.random() * 100 + '%';
+  heart.style.fontSize = (13 + Math.random() * 20) + 'px';
+  heart.style.animationDuration = (7 + Math.random() * 7) + 's';
+  hearts.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 14500);
+}
+
+setInterval(makeHeart, 650);
+
+// نمایش عکس انتخاب‌شده از گالری
+const photoInput = document.getElementById('photoInput');
+const photo = document.getElementById('saharPhoto');
+const placeholder = document.getElementById('placeholder');
+const removePhoto = document.getElementById('removePhoto');
+
+let currentPhotoUrl = null;
+
+photoInput.addEventListener('change', function() {
+  const file = this.files && this.files[0];
+  if (!file) return;
+
+  if (!file.type.startsWith('image/')) {
+    alert('لطفاً یک عکس انتخاب کن 💗');
+    return;
+  }
+
+  if (currentPhotoUrl) URL.revokeObjectURL(currentPhotoUrl);
+
+  currentPhotoUrl = URL.createObjectURL(file);
+  photo.src = currentPhotoUrl;
+  photo.hidden = false;
+  placeholder.hidden = true;
+  removePhoto.hidden = false;
+});
+
+removePhoto.addEventListener('click', function() {
+  photo.hidden = true;
+  photo.removeAttribute('src');
+  placeholder.hidden = false;
+  removePhoto.hidden = true;
+  photoInput.value = '';
+
+  if (currentPhotoUrl) {
+    URL.revokeObjectURL(currentPhotoUrl);
+    currentPhotoUrl = null;
+  }
+});
+
+// نامه‌ی پایانی
+const surpriseBtn = document.getElementById('surpriseBtn');
+const surprise = document.getElementById('surprise');
+
+surpriseBtn.addEventListener('click', function() {
+  const opening = surprise.style.display !== 'block';
+
+  surprise.style.display = opening ? 'block' : 'none';
+  surpriseBtn.textContent = opening
+    ? 'بذار دوباره بخونمش ♡'
+    : 'حرف آخرم رو بخون ♡';
+
+  if (opening) {
+    surprise.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+
+    for (let i = 0; i < 15; i++) {
+      setTimeout(makeHeart, i * 100);
+    }
+  }
+});
+</script>
+
+</body>
+</html>
